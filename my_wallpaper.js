@@ -1,53 +1,57 @@
 //your parameter variables go here!
-let vertex1X = 25;
+let vertex1X = 25; // vine positions
 let vertex2X = 75;
 let vertex3X = 125;
 let vertex4X = 175;
-let navyBlue = "#08013D" ;
+
+let navyBlue = "#08013D" ; // assign colour names
 let creamColour = "#d1cfc9";
 let lightGreen = "#D4DBB4";
 let burntOrange = "#8a591a";
 let black = (0);
-let starVersion = Math.random()
 
-
-
+let starVersion = true // true and false change position of stars
+let baseColour = black // background- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize1 = 1 // choose number between 1 and 2 ie 1.5
+let flowerSize = 1.5 //choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // choose number between 1 and 2 ie 1.5
+let flowerFill = "#EDEDF4" // choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#69A3DD" // choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#48A9A6" // choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
 
 function drawFlower(centreX,centreY) {
-  let size = random(1, 2)
   
   strokeWeight(0.5)
   stroke(69,70,42)
-  fill(random(["#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"])) //randomized petal colours
-  ellipse(centreX-5,centreY,5*size, 5*size)// left petal
-  ellipse(centreX-2.5,centreY+4,5*size, 5*size)//bottom left petal
-  ellipse(centreX+2.5,centreY+4,5*size, 5*size) //bottom right petal
-  ellipse(centreX+5,centreY,5*size, 5*size)// right petal
-  ellipse(centreX+2.5,centreY-4,5*size, 5*size)// top right petal
-  ellipse(centreX-2.5,centreY-4,5*size, 5*size)//top left petal
+  fill(flowerFill) //randomized petal colours
+  ellipse(centreX-5,centreY,5*flowerSize1, 5*flowerSize1)// left petal
+  ellipse(centreX-2.5,centreY+4,5*flowerSize1, 5*flowerSize1)//bottom left petal
+  ellipse(centreX+2.5,centreY+4,5*flowerSize1, 5*flowerSize1) //bottom right petal
+  ellipse(centreX+5,centreY,5*flowerSize1, 5*flowerSize1)// right petal
+  ellipse(centreX+2.5,centreY-4,5*flowerSize1, 5*flowerSize1)// top right petal
+  ellipse(centreX-2.5,centreY-4,5*flowerSize1, 5*flowerSize1)//top left petal
   
   stroke(69,70,42)
   fill(burntOrange) 
-  ellipse(centreX,centreY, 7*size, 7*size)//flower centre
+  ellipse(centreX,centreY, 7*flowerSize1, 7*flowerSize1)//flower centre
   
 } 
 
 function drawFlower2(centreX,centreY) {
-  let size = random(1, 1.5)
    
    strokeWeight(0.5)
    stroke(69,70,42)
-   fill(random(["#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"])) //randomized petal colours
-   ellipse(centreX-5,centreY,5*size, 5*size)// left petal
-   ellipse(centreX-2.5,centreY+4,5*size, 5*size)//bottom left petal
-   ellipse(centreX+2.5,centreY+4,5*size, 5*size) //bottom right petal
-   ellipse(centreX+5,centreY,5*size, 5*size)// right petal
-   ellipse(centreX+2.5,centreY-4,5*size, 5*size)// top right petal
-   ellipse(centreX-2.5,centreY-4,5*size, 5*size)//top left petal
+   fill(flowerFill2) //petal colours
+   ellipse(centreX-5,centreY,5*flowerSize, 5*flowerSize)// left petal
+   ellipse(centreX-2.5,centreY+4,5*flowerSize, 5*flowerSize)//bottom left petal
+   ellipse(centreX+2.5,centreY+4,5*flowerSize, 5*flowerSize) //bottom right petal
+   ellipse(centreX+5,centreY,5*flowerSize, 5*flowerSize)// right petal
+   ellipse(centreX+2.5,centreY-4,5*flowerSize, 5*flowerSize)// top right petal
+   ellipse(centreX-2.5,centreY-4,5*flowerSize, 5*flowerSize)//top left petal
    
    stroke(69,70,42)
    fill(138, 89, 26)
-   ellipse(centreX,centreY, 7*size, 7*size)//flower centre
+   ellipse(centreX,centreY, 7*flowerSize, 7*flowerSize)//flower centre
    
  }
 
@@ -56,17 +60,17 @@ function drawFlower2(centreX,centreY) {
    
    strokeWeight(0.5)
    stroke(69,70,42)
-   fill(random(["#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"])) //randomized petal colours
-   ellipse(centreX-5,centreY,5*size, 5*size)// left petal
-   ellipse(centreX-2.5,centreY+4,5*size, 5*size)//bottom left petal
-   ellipse(centreX+2.5,centreY+4,5*size, 5*size) //bottom right petal
-   ellipse(centreX+5,centreY,5*size, 5*size)// right petal
-   ellipse(centreX+2.5,centreY-4,5*size, 5*size)// top right petal
-   ellipse(centreX-2.5,centreY-4,5*size, 5*size)//top left petal
+   fill(flowerFill3) // petal colours
+   ellipse(centreX-5,centreY,5*flowerSize2, 5*flowerSize2)// left petal
+   ellipse(centreX-2.5,centreY+4,5*flowerSize2, 5*flowerSize2)//bottom left petal
+   ellipse(centreX+2.5,centreY+4,5*flowerSize2, 5*flowerSize2) //bottom right petal
+   ellipse(centreX+5,centreY,5*flowerSize2, 5*flowerSize2)// right petal
+   ellipse(centreX+2.5,centreY-4,5*flowerSize2, 5*flowerSize2)// top right petal
+   ellipse(centreX-2.5,centreY-4,5*flowerSize2, 5*flowerSize2)//top left petal
    
    stroke(69,70,42)
   fill(138, 89, 26) 
-   ellipse(centreX,centreY, 7*size, 7*size)//flower centre
+   ellipse(centreX,centreY, 7*flowerSize2, 7*flowerSize2)//flower centre
    
  }
 
@@ -99,7 +103,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(random([lightGreen, creamColour, navyBlue, black]));
+  background(baseColour);
   
 }
 
@@ -264,7 +268,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  
  drawFlower3(175, 180);
 
-if(starVersion > 0.5) {
+if(starVersion) {
   drawStar(10, 75);
   drawStar(55,20);
   drawStar(100, 120);
