@@ -1,54 +1,431 @@
-You will need to fill out this file for hand in. 
 
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
 
 /////////////////////////////////
 
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1.5 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4Wa" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#BE6E46" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
 }
 
+
+
+
+
 /////////////////////////////////
+
+
+
+
+
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#69A3DD" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#48A9A6" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
 }
+
+
+
+////////////////////////////
+
+
+
+
+Wallpaper 3:
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = navyBlue // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 2 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 2 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 2 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#69A3DD" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#EDEDF4" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+
+//////////////////////////
+
+
+
+
+
+
+
+Wallpaper 4:
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = lightGreen // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 2 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1.5 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#69A3DD" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#BE6E46" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+//////////////////////////
+
+
+
+
+
+
+Wallpaper 5:
+
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1.5 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#69A3DD" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+fi
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+//////////////////////////
+
+
+
+
+
+
+Wallpaper 6:
+
+//your parameter variables go here!
+let vertex1X = 40; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = true // true and false change position of stars
+let baseColour = creamColour // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1.5 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4Wa" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#BE6E46" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+
+//////////////////////////
+
+
+
+
+
+
+Wallpaper 7:
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = false // true and false change position of stars
+let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = .5 //flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize1 = .5 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize2 = .5 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4Wa" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#BE6E46" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+//////////////////////////
+
+
+
+
+
+Wallpaper 8:
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = false // true and false change position of stars
+let baseColour = navyBlue // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = .5 //flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize1 = .5 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize2 = .5 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4Wa" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#69A3DD" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+
+//////////////////////////
+
+
+
+
+Wallpaper 9:
+
+
+//your parameter variables go here!
+let vertex1X = 25; // vine x vertex positions
+let vertex2X = 75;
+let vertex3X = 125;
+let vertex4X = 175;
+
+let navyBlue = "#08013D" ; // assign colour names
+let creamColour = "#d1cfc9";
+let lightGreen = "#D4DBB4";
+let burntOrange = "#8a591a";
+let black = (0);
+
+let starVersion = false // true and false change position of stars
+let baseColour = creamColour // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 2 //flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize1 = 2 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerSize2 = 2 // flower size- choose number between 0.5 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4Wa" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#69A3DD" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  BezierHelper.useBezierTool(pWallpaper);
+}
+
+
+
+
+
+/////////////////////////

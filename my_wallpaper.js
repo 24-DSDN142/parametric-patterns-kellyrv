@@ -1,5 +1,5 @@
 //your parameter variables go here!
-let vertex1X = 25; // vine positions
+let vertex1X = 25; // vine x vertex positions
 let vertex2X = 75;
 let vertex3X = 125;
 let vertex4X = 175;
@@ -11,88 +11,20 @@ let burntOrange = "#8a591a";
 let black = (0);
 
 let starVersion = true // true and false change position of stars
-let baseColour = black // background- can do either lightGreen, black, navyBlue, or creamColour
-let flowerSize1 = 1 // choose number between 1 and 2 ie 1.5
-let flowerSize = 1.5 //choose number between 1 and 2 ie 1.5
-let flowerSize2 = 1 // choose number between 1 and 2 ie 1.5
-let flowerFill = "#EDEDF4" // choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
-let flowerFill2 = "#69A3DD" // choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
-let flowerFill3 = "#48A9A6" // choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
+let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
+let flowerSize1 = 1.5 // flower size- choose number between 1 and 2 ie 1.5
+let flowerSize2 = 1 // flower size- choose number between 1 and 2 ie 1.5
+let flowerFill = "#C8A8F0" // petal colour- choose from "#BE6E46" (light orange),"#EDEDF4" (white-ish), "#C8A8F0"(purple), "#48A9A6" (light teal), "#69A3DD" (light blue) 
+let flowerFill2 = "#EDEDF4" // petal colour- choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
+let flowerFill3 = "#69A3DD" // petal colour-  choose from "#BE6E46","#EDEDF4", "#C8A8F0", "#48A9A6", "#69A3DD"
 
-function drawFlower(centreX,centreY) {
-  
-  strokeWeight(0.5)
-  stroke(69,70,42)
-  fill(flowerFill) //randomized petal colours
-  ellipse(centreX-5,centreY,5*flowerSize1, 5*flowerSize1)// left petal
-  ellipse(centreX-2.5,centreY+4,5*flowerSize1, 5*flowerSize1)//bottom left petal
-  ellipse(centreX+2.5,centreY+4,5*flowerSize1, 5*flowerSize1) //bottom right petal
-  ellipse(centreX+5,centreY,5*flowerSize1, 5*flowerSize1)// right petal
-  ellipse(centreX+2.5,centreY-4,5*flowerSize1, 5*flowerSize1)// top right petal
-  ellipse(centreX-2.5,centreY-4,5*flowerSize1, 5*flowerSize1)//top left petal
-  
-  stroke(69,70,42)
-  fill(burntOrange) 
-  ellipse(centreX,centreY, 7*flowerSize1, 7*flowerSize1)//flower centre
-  
-} 
 
-function drawFlower2(centreX,centreY) {
-   
-   strokeWeight(0.5)
-   stroke(69,70,42)
-   fill(flowerFill2) //petal colours
-   ellipse(centreX-5,centreY,5*flowerSize, 5*flowerSize)// left petal
-   ellipse(centreX-2.5,centreY+4,5*flowerSize, 5*flowerSize)//bottom left petal
-   ellipse(centreX+2.5,centreY+4,5*flowerSize, 5*flowerSize) //bottom right petal
-   ellipse(centreX+5,centreY,5*flowerSize, 5*flowerSize)// right petal
-   ellipse(centreX+2.5,centreY-4,5*flowerSize, 5*flowerSize)// top right petal
-   ellipse(centreX-2.5,centreY-4,5*flowerSize, 5*flowerSize)//top left petal
-   
-   stroke(69,70,42)
-   fill(138, 89, 26)
-   ellipse(centreX,centreY, 7*flowerSize, 7*flowerSize)//flower centre
-   
- }
-
- function drawFlower3(centreX,centreY) {
-  let size = random(1, 1.5)
-   
-   strokeWeight(0.5)
-   stroke(69,70,42)
-   fill(flowerFill3) // petal colours
-   ellipse(centreX-5,centreY,5*flowerSize2, 5*flowerSize2)// left petal
-   ellipse(centreX-2.5,centreY+4,5*flowerSize2, 5*flowerSize2)//bottom left petal
-   ellipse(centreX+2.5,centreY+4,5*flowerSize2, 5*flowerSize2) //bottom right petal
-   ellipse(centreX+5,centreY,5*flowerSize2, 5*flowerSize2)// right petal
-   ellipse(centreX+2.5,centreY-4,5*flowerSize2, 5*flowerSize2)// top right petal
-   ellipse(centreX-2.5,centreY-4,5*flowerSize2, 5*flowerSize2)//top left petal
-   
-   stroke(69,70,42)
-  fill(138, 89, 26) 
-   ellipse(centreX,centreY, 7*flowerSize2, 7*flowerSize2)//flower centre
-   
- }
-
- function drawStar(starX, starY) {
-  noStroke();
-  beginShape();
-  vertex(starX, starY-5);
-  vertex(starX+1, starY-1);
-  vertex(starX+5, starY);
-  vertex(starX+1, starY+1);
-  vertex(starX, starY+5);
-  vertex(starX-1, starY+1);
-  vertex(starX-5, starY);
-  vertex(starX-1, starY-1);
-  endShape();
-
-  }
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -101,6 +33,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.row_offset  = 0;
   BezierHelper.useBezierTool(pWallpaper);
 }
+
 
 function wallpaper_background() {
   background(baseColour);
@@ -117,22 +50,22 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
  noFill();
  
- beginShape();//line 1
+ beginShape();//vine 1
  vertex(vertex1X,0);
  bezierVertex(0,50, 60, 125, vertex1X, 200);
  endShape();
 
- beginShape(); //line 2
+ beginShape(); //vine 2
  vertex(vertex2X,0);
  bezierVertex(110,50, 50, 125, vertex2X, 200);
  endShape();
 
- beginShape(); //line 3
+ beginShape(); //vine 3
  vertex(vertex3X,0);
  bezierVertex(100,50, 150, 125, vertex3X, 200);
  endShape();
 
- beginShape(); // line 4
+ beginShape(); // vine 4
  vertex(vertex4X,0);
  bezierVertex(200,50, 150, 125, vertex4X, 200);
  endShape();
@@ -268,7 +201,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  
  drawFlower3(175, 180);
 
-if(starVersion) {
+if(starVersion) { // chooses star positions from 2 options
   drawStar(10, 75);
   drawStar(55,20);
   drawStar(100, 120);
@@ -291,3 +224,73 @@ if(starVersion) {
   drawStar(15, 120)
  }
 }
+
+function drawFlower(centreX,centreY) { 
+  
+  strokeWeight(0.5)
+  stroke(69,70,42)
+  fill(flowerFill) // petal colours
+  ellipse(centreX-5,centreY,5*flowerSize1, 5*flowerSize1)// left petal
+  ellipse(centreX-2.5,centreY+4,5*flowerSize1, 5*flowerSize1)//bottom left petal
+  ellipse(centreX+2.5,centreY+4,5*flowerSize1, 5*flowerSize1) //bottom right petal
+  ellipse(centreX+5,centreY,5*flowerSize1, 5*flowerSize1)// right petal
+  ellipse(centreX+2.5,centreY-4,5*flowerSize1, 5*flowerSize1)// top right petal
+  ellipse(centreX-2.5,centreY-4,5*flowerSize1, 5*flowerSize1)//top left petal
+  
+  stroke(69,70,42)
+  fill(burntOrange) // flower centre fill
+  ellipse(centreX,centreY, 7*flowerSize1, 7*flowerSize1)//flower centre
+  
+} 
+
+function drawFlower2(centreX,centreY) {
+   
+   strokeWeight(0.5)
+   stroke(69,70,42)
+   fill(flowerFill2) //petal colours
+   ellipse(centreX-5,centreY,5*flowerSize, 5*flowerSize)// left petal
+   ellipse(centreX-2.5,centreY+4,5*flowerSize, 5*flowerSize)//bottom left petal
+   ellipse(centreX+2.5,centreY+4,5*flowerSize, 5*flowerSize) //bottom right petal
+   ellipse(centreX+5,centreY,5*flowerSize, 5*flowerSize)// right petal
+   ellipse(centreX+2.5,centreY-4,5*flowerSize, 5*flowerSize)// top right petal
+   ellipse(centreX-2.5,centreY-4,5*flowerSize, 5*flowerSize)//top left petal
+   
+   stroke(69,70,42) 
+   fill(138, 89, 26) //flower centre colour
+   ellipse(centreX,centreY, 7*flowerSize, 7*flowerSize)//flower centre
+   
+ }
+
+ function drawFlower3(centreX,centreY) {
+  let size = flowerSize2
+   
+   strokeWeight(0.5)
+   stroke(69,70,42)
+   fill(flowerFill3) // petal colours
+   ellipse(centreX-5,centreY,5*flowerSize2, 5*flowerSize2)// left petal
+   ellipse(centreX-2.5,centreY+4,5*flowerSize2, 5*flowerSize2)//bottom left petal
+   ellipse(centreX+2.5,centreY+4,5*flowerSize2, 5*flowerSize2) //bottom right petal
+   ellipse(centreX+5,centreY,5*flowerSize2, 5*flowerSize2)// right petal
+   ellipse(centreX+2.5,centreY-4,5*flowerSize2, 5*flowerSize2)// top right petal
+   ellipse(centreX-2.5,centreY-4,5*flowerSize2, 5*flowerSize2)//top left petal
+   
+   stroke(69,70,42)
+  fill(138, 89, 26) //flower centre colour
+   ellipse(centreX,centreY, 7*flowerSize2, 7*flowerSize2)//flower centre
+   
+ }
+
+ function drawStar(starX, starY) { //make all the stars
+  noStroke();
+  beginShape();
+  vertex(starX, starY-5);
+  vertex(starX+1, starY-1);
+  vertex(starX+5, starY);
+  vertex(starX+1, starY+1);
+  vertex(starX, starY+5);
+  vertex(starX-1, starY+1);
+  vertex(starX-5, starY);
+  vertex(starX-1, starY-1);
+  endShape();
+
+  }
