@@ -10,7 +10,7 @@ let lightGreen = "#D4DBB4";
 let burntOrange = "#8a591a";
 let black = (0);
 
-let starVersion = true // true and false change position of stars
+let starVersion = false // true and false change position of stars
 let baseColour = black // background colour- can do either lightGreen, black, navyBlue, or creamColour
 let flowerSize = 1 //flower size- choose number between 1 and 2 ie 1.5
 let flowerSize1 = 1 // flower size- choose number between 1 and 2 ie 1.5
